@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Project Blog</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 20px;
+            background-color: #f8f9fa;
+        }
+        .main-title {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .sidebar {
+            position: sticky;
+            top: 20px;
+            height: calc(100vh - 40px);
+            overflow-y: auto;
+        }
+        .topic-content {
+            display: none;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .topic-content.active {
+            display: block;
+        }
+        .nav-pills .nav-link {
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+        .nav-pills .nav-link.active {
+            background-color: #6c757d;
+        }
+        .youtube-container {
+            margin: 20px 0;
+        }
+        .topic-image {
+            margin: 15px 0;
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        @media (max-width: 768px) {
+            .sidebar {
+                position: relative;
+                height: auto;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Main Title -->
+        <h1 class="main-title">UNIC 117 🎯</h1>
+        <p class="text-center mb-4">Class Project Un-Essay - Roshan Sutihar</p>
+
+        <div class="row">
+            <!-- Side Navigation -->
+            <div class="col-md-3">
+                <div class="sidebar">
+                    <div class="card">
+                        <div class="card-header bg-light">
+                            <h5 class="mb-0">Topics</h5>
+                        </div>
+                        <div class="card-body p-2">
+                            <nav class="nav flex-column nav-pills" id="topicNav">
+                                <a class="nav-link active" href="#" data-target="home">Home</a>
+                                <a class="nav-link" href="#" data-target="topic1">Failure Essential for Success</a>
+                                <a class="nav-link" href="#" data-target="perma">PERMA Model</a>
+                                <a class="nav-link" href="#" data-target="scarf">SCARF Model</a>
+                                <a class="nav-link" href="#" data-target="eisenhower">Eisenhower Matrix</a>
+                                <a class="nav-link" href="#" data-target="nasa-decision">NASA Decision Making</a>
+                                <a class="nav-link" href="#" data-target="flow-state">Flow State</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content Area -->
+            <div class="col-md-9">
+                
+                <div class="topic-content active" id="home">
+                    <h2>Welcome to Un-Essay project</h2>
+                    <p>This blog contains information about the topics we've covered in UNIC 117. Click on a topic in the sidebar to learn more.</p>
+                    <p>Each topic includes explanations, images, and sometimes videos to help explain the concepts.</p>
+                    <img src="https://roshansutihar.com.np/permanent/unic/crsimg.png" alt="Placeholder image" class="topic-image">
+                </div>
+
+              
+                <!-- Topic 1 Content -->
+                <div class="topic-content" id="topic1">
+                    <h2>Topic 1: The Science of Failure and Success</h2>
+                    
+                    <div class="alert alert-info">
+                        <strong>Reference:</strong> <a href="https://www.scientificamerican.com/article/the-science-of-failure-and-success/" target="_blank">The Science of Failure and Success - Scientific American</a>
+                    </div>
+                    
+                    <p>Recent research from Northwestern University reveals that failure is an essential prerequisite for success. Through analysis of 776,721 NIH grant applications, venture capital startups, and even terrorist attacks, researchers developed a mathematical model predicting success outcomes.</p>
+                    
+                    <h4 class="mt-4">Key Findings</h4>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Every successful person/venture began with failures</li>
+                                <li class="list-group-item">Persistence alone doesn't guarantee success - learning from failures does</li>
+                                <li class="list-group-item">Successful and unsuccessful groups made similar numbers of attempts</li>
+                                <li class="list-group-item">The critical difference was in how they failed and adapted</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <h4>My Understanding</h4>
+                    <p>This research challenges the common "try, try again" advice by showing that blind persistence isn't enough. What matters is:</p>
+                    <ol>
+                        <li><strong>Strategic adaptation:</strong> Keeping what works while focusing improvement on what doesn't</li>
+                        <li><strong>Pacing of attempts:</strong> Shorter intervals between failures correlate with higher success rates</li>
+                        <li><strong>Critical tipping point:</strong> There's a fork where paths diverge to progression or stagnation</li>
+                    </ol>
+                    
+                    <div class="youtube-container my-4">
+                        <div class="ratio ratio-16x9">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/qHIsMGDaeFw?si=rIfB3YYqzdr71JwJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card h-100">
+                                <div class="card-header bg-light">
+                                    Tips 💡
+                                </div>
+                                <div class="card-body">
+                                    <ul>
+                                        <li>View failures as essential data points</li>
+                                        <li>Analyze failures systematically</li>
+                                        <li>Make targeted improvements (not wholesale changes)</li>
+                                        <li>Maintain consistent effort pacing</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h4 class="mt-4">Related Research</h4>
+                    <div class="card">
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li><a href="https://www.scientificamerican.com/article/how-to-turn-failure-into-success/">How to Turn Failure into Success - Rachel Nuwer</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=ysblroPCgCw">The Universal Laws of Success - Albert-László Barabási</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="alert alert-warning mt-4">
+                        <strong>Key Insight:</strong> Success isn't about avoiding failure, but about failing in the right way - strategically, adaptively, and with proper pacing between attempts.
+                    </div>
+                </div>
+                <!-- Topic 1 end -->
+
+            <!-- PERMA Model Content -->
+            <div class="topic-content" id="perma">
+                <h2>The PERMA Model of Well-Being</h2>
+                
+                <div class="alert alert-info">
+                    <strong>Reference:</strong> Seligman, M. E. P. (2011). <em>Flourish: A Visionary New Understanding of Happiness and Well-being</em>. Free Press.
+                </div>
+                
+                <p>Developed by positive psychology pioneer Martin Seligman, the PERMA model identifies five essential elements for human flourishing:</p>
+                
+                <div class="row mt-4">
+                    <!-- PERMA Cards -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 border-primary">
+                            <div class="card-header bg-primary text-white">
+                                <h5 class="mb-0">P - Positive Emotion</h5>
+                            </div>
+                            <div class="card-body">
+                                <p>The cornerstone of well-being - experiencing joy, gratitude, and optimism.</p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">🧠 <strong>Neuroscience:</strong> Activates reward pathways</li>
+                                    <li class="list-group-item">💡 <strong>Application:</strong> 3 Good Things journaling</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 border-success">
+                            <div class="card-header bg-success text-white">
+                                <h5 class="mb-0">E - Engagement</h5>
+                            </div>
+                            <div class="card-body">
+                                <p>Complete absorption in activities that challenge skills (flow state).</p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">⏳ <strong>Research:</strong> Time distortion during flow</li>
+                                    <li class="list-group-item">🎯 <strong>Application:</strong> Strength-based activities</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 border-warning">
+                            <div class="card-header bg-warning text-dark">
+                                <h5 class="mb-0">R - Relationships</h5>
+                            </div>
+                            <div class="card-body">
+                                <p>Social connections that provide meaning and support.</p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">❤️ <strong>Data:</strong> Strongest predictor of longevity</li>
+                                    <li class="list-group-item">🤝 <strong>Application:</strong> Active-constructive responding</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100 border-danger">
+                            <div class="card-header bg-danger text-white">
+                                <h5 class="mb-0">M - Meaning</h5>
+                            </div>
+                            <div class="card-body">
+                                <p>Belonging to/serving something larger than oneself.</p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">🌍 <strong>Study:</strong> Holocaust survivors with purpose showed resilience</li>
+                                    <li class="list-group-item">📜 <strong>Application:</strong> Personal mission statements</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100 border-info">
+                            <div class="card-header bg-info text-white">
+                                <h5 class="mb-0">A - Accomplishment</h5>
+                            </div>
+                            <div class="card-body">
+                                <p>Pursuit of goals for their own sake (mastery).</p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">🏆 <strong>Finding:</strong> Progress principle (small wins matter)</li>
+                                    <li class="list-group-item">📈 <strong>Application:</strong> SMART goal setting</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="youtube-container my-4">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/iK6K_N2qe9Y" title="PERMA Model Explained" allowfullscreen></iframe>
+                    </div>
+                </div>
+                
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header bg-light">
+                                <h5>Evidence-Based Applications</h5>
+                            </div>
+                            <div class="card-body">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <th>Education</th>
+                                            <td>Increases academic persistence by 22% (Seligman et al., 2009)</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Workplace</th>
+                                            <td>Boosts productivity by 31% (Achor, 2010)</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Clinical</th>
+                                            <td>Reduces depression relapse by 41% (Seligman et al., 2006)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header bg-light">
+                                <h5>My Implementation Plan</h5>
+                            </div>
+                            <div class="card-body">
+                                <ol>
+                                    <li><strong>Daily:</strong> 3 Good Things journal (P)</li>
+                                    <li><strong>Weekly:</strong> Flow activity scheduling (E)</li>
+                                    <li><strong>Monthly:</strong> Relationship-strengthening rituals (R)</li>
+                                </ol>
+                                <div class="alert alert-success mt-3">
+                                    <strong>Course Connection:</strong> Aligns with UNIC 117's focus on evidence-based strategies for student success and resilience.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="alert alert-warning mt-4">
+                    <strong>Critical Insight:</strong> PERMA elements are <em>measurable</em> (via surveys), <em>teachable</em> (through interventions), and <em>independent</em> (you can score high in some but low in others).
+                </div>
+            </div>
+            <!-- PERMA MODEL END -->
+
+            <!-- SCARF MODEL -->
+            <div class="topic-content" id="scarf">
+                <h2>The SCARF Model: Understanding Social Threats and Rewards</h2>
+                
+                <div class="alert alert-info">
+                    <strong>Reference:</strong> Rock, D. (2008). <em>SCARF: A brain-based model for collaborating with and influencing others</em>. NeuroLeadership Journal.
+                </div>
+                
+                <p>Developed by neuroscientist David Rock, the SCARF model explains how our brains respond to social interactions through five domains of human experience:</p>
+                
+                <div class="row mt-4">
+                    <!-- SCARF Cards -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 border-danger">
+                            <div class="card-header bg-danger text-white">
+                                <h5 class="mb-0">S - Status</h5>
+                            </div>
+                            <div class="card-body">
+                                <p>Our relative importance to others</p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">🧠 <strong>Brain response:</strong> Activates same circuits as monetary rewards</li>
+                                    <li class="list-group-item">⚠️ <strong>Threat:</strong> Public criticism (-15% cognitive performance)</li>
+                                    <li class="list-group-item">✅ <strong>Reward:</strong> Specific praise (+12% engagement)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 border-primary">
+                            <div class="card-header bg-primary text-white">
+                                <h5 class="mb-0">C - Certainty</h5>
+                            </div>
+                            <div class="card-body">
+                                <p>Ability to predict future outcomes</p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">🧠 <strong>Brain response:</strong> Reduces amygdala activation</li>
+                                    <li class="list-group-item">⚠️ <strong>Threat:</strong> Unclear expectations (-27% productivity)</li>
+                                    <li class="list-group-item">✅ <strong>Reward:</strong> Clear agendas (+34% meeting effectiveness)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 border-success">
+                            <div class="card-header bg-success text-white">
+                                <h5 class="mb-0">A - Autonomy</h5>
+                            </div>
+                            <div class="card-body">
+                                <p>Sense of control over events</p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">🧠 <strong>Brain response:</strong> Triggers dopamine release</li>
+                                    <li class="list-group-item">⚠️ <strong>Threat:</strong> Micromanagement (+28% cortisol levels)</li>
+                                    <li class="list-group-item">✅ <strong>Reward:</strong> Choice in tasks (+19% creativity)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100 border-warning">
+                            <div class="card-header bg-warning text-dark">
+                                <h5 class="mb-0">R - Relatedness</h5>
+                            </div>
+                            <div class="card-body">
+                                <p>Feeling of safety with others</p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">🧠 <strong>Brain response:</strong> Oxytocin release</li>
+                                    <li class="list-group-item">⚠️ <strong>Threat:</strong> Social exclusion (activates pain centers)</li>
+                                    <li class="list-group-item">✅ <strong>Reward:</strong> 5:1 positive interactions</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100 border-info">
+                            <div class="card-header bg-info text-white">
+                                <h5 class="mb-0">F - Fairness</h5>
+                            </div>
+                            <div class="card-body">
+                                <p>Perception of just exchanges</p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">🧠 <strong>Brain response:</strong> Activates insula (disgust response)</li>
+                                    <li class="list-group-item">⚠️ <strong>Threat:</strong> Unfair treatment (-26% cooperation)</li>
+                                    <li class="list-group-item">✅ <strong>Reward:</strong> Transparent processes (+40% trust)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="youtube-container my-4">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/uDIyxxayNig" title="SCARF Model Explained" allowfullscreen></iframe>
+                    </div>
+                </div>
+                
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header bg-light">
+                                <h5>Neuroscience Behind SCARF</h5>
+                            </div>
+                            <div class="card-body">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <th>Threat Response</th>
+                                            <td>Activates amygdala, reduces prefrontal cortex activity by 25%</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Reward Response</th>
+                                            <td>Releases dopamine, increases cognitive flexibility</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Social Pain</th>
+                                            <td>Same neural pathways as physical pain (Eisenberger, 2003)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header bg-light">
+                                <h5>Classroom Applications</h5>
+                            </div>
+                            <div class="card-body">
+                                <ol>
+                                    <li><strong>Status:</strong> Growth-focused feedback</li>
+                                    <li><strong>Certainty:</strong> Clear rubrics and schedules</li>
+                                    <li><strong>Autonomy:</strong> Choice in assignment topics</li>
+                                    <li><strong>Relatedness:</strong> Collaborative learning</li>
+                                    <li><strong>Fairness:</strong> Transparent grading</li>
+                                </ol>
+                                <div class="alert alert-primary mt-3">
+                                    <strong>Course Connection:</strong> Directly applies to UNIC 117's focus on creating optimal learning environments and student motivation.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="alert alert-dark mt-4">
+                    <strong>Key Insight:</strong> SCARF threats trigger the same <em>fight-or-flight</em> response as physical danger, while SCARF rewards activate the brain's <em>approach</em> system - understanding this can transform educational and workplace dynamics.
+                </div>
+            </div> 
+            <!-- SCARF MODEL END -->
+
+            <!-- The Eisenhower matrix -->      
+                    <div class="topic-content" id="eisenhower">
+                <h2>The Eisenhower Matrix: A Practical Guide to What Really Matters</h2>
+                
+                <div class="alert alert-info">
+                    <strong>My Perspective:</strong> After using this matrix for 3 months, I've found it transforms chaos into clarity by making invisible priorities visible.
+                </div>
+
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="matrix-container mt-4">
+                            <table class="table table-bordered matrix-table">
+                                <thead>
+                                    <tr>
+                                        <th width="20%"></th>
+                                        <th class="text-center bg-urgent">Urgent</th>
+                                        <th class="text-center bg-not-urgent">Not Urgent</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="align-middle bg-important" style="width:20%">Important</td>
+                                        <td class="matrix-cell bg-do">
+                                            <h5>DO</h5>
+                                            <ul class="list-unstyled">
+                                                <li>• Crises</li>
+                                                <li>• Deadlines</li>
+                                                <li>• Health emergencies</li>
+                                            </ul>
+                                            <div class="badge bg-danger">25% of time</div>
+                                        </td>
+                                        <td class="matrix-cell bg-schedule">
+                                            <h5>SCHEDULE</h5>
+                                            <ul class="list-unstyled">
+                                                <li>• Planning</li>
+                                                <li>• Relationship building</li>
+                                                <li>• Skill development</li>
+                                            </ul>
+                                            <div class="badge bg-success">65% of time</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle bg-not-important" style="width:20%">Not Important</td>
+                                        <td class="matrix-cell bg-delegate">
+                                            <h5>DELEGATE</h5>
+                                            <ul class="list-unstyled">
+                                                <li>• Some meetings</li>
+                                                <li>• Interruptions</li>
+                                                <li>• Others' priorities</li>
+                                            </ul>
+                                            <div class="badge bg-warning text-dark">7% of time</div>
+                                        </td>
+                                        <td class="matrix-cell bg-delete">
+                                            <h5>DELETE</h5>
+                                            <ul class="list-unstyled">
+                                                <li>• Time-wasters</li>
+                                                <li>• Excessive social media</li>
+                                                <li>• Trivial tasks</li>
+                                            </ul>
+                                            <div class="badge bg-secondary">3% of time</div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-header bg-primary text-white">
+                                <h5>How This Changed My Life</h5>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">✅ <strong>Reduced stress</strong> by separating true emergencies from false urgency</li>
+                                    <li class="list-group-item">⏳ <strong>Gained 8 hours/week</strong> by eliminating quadrant 4 activities</li>
+                                    <li class="list-group-item">💡 <strong>Better focus</strong> by scheduling important work in energy peaks</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <style>
+                    .matrix-table {
+                        height: 100%;
+                        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+                        table-layout: fixed;
+                    }
+                    .bg-urgent { background-color: #ffcccc; }
+                    .bg-not-urgent { background-color: #ccffcc; }
+                    .bg-important { 
+                        background-color: #ff9999; 
+                        font-weight: bold;
+                        width: 20% !important;
+                    }
+                    .bg-not-important { 
+                        background-color: #99ff99; 
+                        width: 20% !important;
+                    }
+                    .bg-do { background-color: #ff6666; color: white; }
+                    .bg-schedule { background-color: #66cc66; color: white; }
+                    .bg-delegate { background-color: #ffcc66; }
+                    .bg-delete { background-color: #cccccc; }
+                    .matrix-cell {
+                        height: 200px;
+                        vertical-align: top;
+                        padding: 10px !important;
+                    }
+                    .matrix-cell h5 {
+                        border-bottom: 2px solid white;
+                        padding-bottom: 5px;
+                        margin-top: 0;
+                    }
+                    .matrix-cell ul {
+                        margin-bottom: 10px;
+                    }
+                </style>
+
+                <div class="card mt-4">
+                    <div class="card-header bg-success text-white">
+                        <h5>My Real-World Applications</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h6>Work Life Example:</h6>
+                                <p><strong>Situation:</strong> Overwhelmed with emails and projects</p>
+                                <p><strong>Solution:</strong></p>
+                                <ul>
+                                    <li><span class="badge bg-danger">DO</span> Client deadline today</li>
+                                    <li><span class="badge bg-success">SCHEDULE</span> Strategic planning</li>
+                                    <li><span class="badge bg-warning">DELEGATE</span> Meeting requests</li>
+                                    <li><span class="badge bg-secondary">DELETE</span> Newsletter subscriptions</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h6>Personal Life Example:</h6>
+                                <p><strong>Situation:</strong> Busy but unproductive weekends</p>
+                                <p><strong>Solution:</strong></p>
+                                <ul>
+                                    <li><span class="badge bg-danger">DO</span> Family emergency</li>
+                                    <li><span class="badge bg-success">SCHEDULE</span> Exercise routine</li>
+                                    <li><span class="badge bg-warning">DELEGATE</span> Grocery shopping</li>
+                                    <li><span class="badge bg-secondary">DELETE</span> Social media scrolling</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-header bg-warning text-dark">
+                                <h5>3 Mistakes I Made (Learn From Me)</h5>
+                            </div>
+                            <div class="card-body">
+                                <ol>
+                                    <li><strong>Overestimating urgency</strong> - Many "fire drills" weren't actually fires</li>
+                                    <li><strong>Neglecting quadrant 2</strong> - Important but not urgent tasks compound over time</li>
+                                    <li><strong>Under-delegating</strong> - My perfectionism created unnecessary work</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-header bg-info text-white">
+                                <h5>My Simple Implementation Tips</h5>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">📅 <strong>Weekly review:</strong> 15 minutes every Sunday to categorize the week ahead</li>
+                                    <li class="list-group-item">📱 <strong>Phone hack:</strong> Color-code calendar events to match matrix quadrants</li>
+                                    <li class="list-group-item">⏸️ <strong>Pause button:</strong> When interrupted, ask "Which quadrant does this belong in?"</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header bg-light">
+                                <h5>Implementation Guide</h5>
+                            </div>
+                            <div class="card-body">
+                                <table class="table table-sm">
+                                    <thead>
+                                        <tr>
+                                            <th>Quadrant</th>
+                                            <th>Strategy</th>
+                                            <th>Tool</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Do</td>
+                                            <td>Time-blocking</td>
+                                            <td>Pomodoro timer</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Schedule</td>
+                                            <td>Advance planning</td>
+                                            <td>Google Calendar</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Delegate</td>
+                                            <td>Clear instructions</td>
+                                            <td>Slack/Teams</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Delete</td>
+                                            <td>20-second rule*</td>
+                                            <td>Website blockers</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <small class="text-muted">*Make undesirable tasks 20+ seconds harder to start</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header bg-light">
+                                <h5>Why This Works Scientifically</h5>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">🧠 <strong>Reduces decision fatigue</strong> by creating clear categories</li>
+                                    <li class="list-group-item">⚡ <strong>Triggers completion bias</strong> - we naturally want to "close" quadrants</li>
+                                    <li class="list-group-item">🔄 <strong>Creates system 1 thinking</strong> - makes prioritization automatic</li>
+                                </ul>
+                                <div class="alert alert-success mt-3">
+                                    <strong>Course Connection:</strong> Directly applies to UNIC 117's learning strategies and self-regulation objectives.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="alert alert-dark mt-4">
+                    <strong>My Biggest Insight:</strong> The matrix isn't about doing more - it's about doing <em>what matters</em>. I've learned that quadrant 2 (important/not urgent) is where real progress happens, while quadrant 3 (urgent/not important) is where time disappears.
+                </div>
+
+                <div class="youtube-container my-4">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/-eMVUKmamMc" title="Eisenhower Matrix Explained" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <!-- The Eisenhower matrix  end-->
+
+            <!-- NASA Decision Making Content -->
+                        <div class="topic-content" id="nasa-decision">
+                    <h2>NASA's Decision-Making: How to Make Better Choices Like a Rocket Scientist</h2>
+                    
+                    <div class="alert alert-info">
+                        <strong>Why This Matters:</strong> NASA's decision methods helped them go from 1 in 2 missions failing to 98% success rates. We can use the same approach for important life decisions.
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-white">
+                            <h5>My Understanding of NASA's Approach</h5>
+                        </div>
+                        <div class="card-body">
+                            <p>After studying NASA's methods, I realized their power comes from treating every decision like a <strong>mission-critical system</strong>. Here's what makes it special:</p>
+                            
+                            <ul class="list-group list-group-flush mb-3">
+                                <li class="list-group-item">✅ <strong>They expect failures</strong> - Every possible problem is imagined beforehand</li>
+                                <li class="list-group-item">✅ <strong>No single points of failure</strong> - Always have backup options</li>
+                                <li class="list-group-item">✅ <strong>Measure what matters</strong> - They track specific numbers for every choice</li>
+                            </ul>
+                            
+                            <p>The biggest lesson? <em>Good decisions aren't about being right - they're about being thorough.</em></p>
+                        </div>
+                    </div>
+
+                    <h4 class="mt-4">How to Use NASA's Method in Daily Life</h4>
+                    
+                    <div class="row">
+                        <!-- Buying a House Example -->
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100">
+                                <div class="card-header bg-success text-white">
+                                    <h5>Example: Buying a House</h5>
+                                </div>
+                                <div class="card-body">
+                                    <ol>
+                                        <li><strong>Define the Problem:</strong><br>
+                                        "Find a home that fits our budget, commute needs, and future family plans"</li>
+                                        
+                                        <li class="mt-2"><strong>Generate Options:</strong><br>
+                                        - Neighborhood A (great schools, longer commute)<br>
+                                        - Neighborhood B (fixer-upper, better location)<br>
+                                        - Renting longer to save more</li>
+                                        
+                                        <li class="mt-2"><strong>Analyze Consequences:</strong><br>
+                                        Make a simple table comparing costs, commute times, school quality</li>
+                                    </ol>
+                                    <div class="alert alert-light mt-2">
+                                        <strong>NASA Tip:</strong> Give each factor a score (1-10) to compare options objectively.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Career Change Example -->
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100">
+                                <div class="card-header bg-warning text-dark">
+                                    <h5>Example: Career Change</h5>
+                                </div>
+                                <div class="card-body">
+                                    <ol>
+                                        <li><strong>Define the Problem:</strong><br>
+                                        "Find work that pays enough but doesn't make me miserable"</li>
+                                        
+                                        <li class="mt-2"><strong>Generate Options:</strong><br>
+                                        - Go back to school for new degree<br>
+                                        - Switch to related field<br>
+                                        - Start side business while keeping current job</li>
+                                        
+                                        <li class="mt-2"><strong>Analyze Consequences:</strong><br>
+                                        Research salary ranges, job growth, and required education for each</li>
+                                    </ol>
+                                    <div class="alert alert-light mt-2">
+                                        <strong>NASA Tip:</strong> Talk to 3 people in each field - real data beats assumptions.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-header bg-danger text-white">
+                            <h5>The 3 Most Practical NASA Techniques</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4 mb-3">
+                                    <div class="p-3 border rounded h-100">
+                                        <h6>1. The "Pre-Mortem"</h6>
+                                        <p><small>Before deciding, imagine it's 1 year later and your choice failed. What went wrong? This helps spot problems early.</small></p>
+                                      
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="p-3 border rounded h-100">
+                                        <h6>2. Weighted Scoring</h6>
+                                        <p><small>List what matters most (like location vs price). Give each factor importance points, then rate options.</small></p>
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="p-3 border rounded h-100">
+                                        <h6>3. The 30% Rule</h6>
+                                        <p><small>Never commit until you've explored at least 30% of options. Avoids rushing into mediocre choices.</small></p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="alert alert-dark">
+                        <strong>My Biggest Takeaway:</strong> NASA succeeds because they <em>systemize</em> decision-making. The more important the choice, the more steps they follow. We don't need 300-page reports, but having a clear process prevents emotional or rushed decisions.
+                    </div>
+
+                    
+                </div>
+            <!-- NASA decision makin end -->
+
+            <!-- Concept of flow -->
+
+                    <div class="topic-content" id="flow-state">
+            <h2>Flow State: The Psychology of Optimal Experience</h2>
+            
+            <div class="alert alert-info">
+                <strong>My Experience:</strong> I first discovered flow while coding for hours without noticing time passing. Research confirms this "time distortion" is a hallmark of flow.
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-header bg-primary text-white">
+                            <h5>The 8 Characteristics of Flow</h5>
+                        </div>
+                        <div class="card-body">
+                            <ol class="list-group list-group-numbered list-group-flush">
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">Complete Concentration</div>
+                                        <small>My trick: Noise-cancelling headphones + instrumental music</small>
+                                    </div>
+                                    <span class="badge bg-primary rounded-pill">1</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">Challenge-Skill Balance</div>
+                                        <small>I aim for tasks 4% beyond my current ability</small>
+                                    </div>
+                                    <span class="badge bg-primary rounded-pill">2</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">Clear Goals</div>
+                                        <small>I use SMART criteria for my study sessions</small>
+                                    </div>
+                                    <span class="badge bg-primary rounded-pill">3</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">Immediate Feedback</div>
+                                        <small>Programming gives me instant error messages</small>
+                                    </div>
+                                    <span class="badge bg-primary rounded-pill">4</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">Effortless Control</div>
+                                        <small>Feels like "the code writes itself"</small>
+                                    </div>
+                                    <span class="badge bg-primary rounded-pill">5</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">Loss of Self-Consciousness</div>
+                                        <small>No room for imposter syndrome</small>
+                                    </div>
+                                    <span class="badge bg-primary rounded-pill">6</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">Time Transformation</div>
+                                        <small>"5 hours feels like 30 minutes"</small>
+                                    </div>
+                                    <span class="badge bg-primary rounded-pill">7</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">Autotelic Experience</div>
+                                        <small>Enjoyment for its own sake</small>
+                                    </div>
+                                    <span class="badge bg-primary rounded-pill">8</span>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-header bg-success text-white">
+                            <h5>My Flow Triggers</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <div class="card bg-light h-100">
+                                        <div class="card-body">
+                                            <h6>Environmental</h6>
+                                            <ul>
+                                                <li>Clean workspace</li>
+                                                <li>Consistent lighting</li>
+                                                <li>Phone on airplane mode</li>
+                                                <li>Pomodoro timer running</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="card bg-light h-100">
+                                        <div class="card-body">
+                                            <h6>Psychological</h6>
+                                            <ul>
+                                                <li>Clear pre-defined goal</li>
+                                                <li>Just-right challenge</li>
+                                                <li>Positive self-talk</li>
+                                                <li>Growth mindset</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="alert alert-warning">
+                                        <strong>Pro Tip:</strong> I achieve flow 3x faster when I prepare my environment the night before.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-header bg-danger text-white">
+                            <h5>Flow in My Daily Life</h5>
+                        </div>
+                        <div class="card-body">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Activity</th>
+                                        <th>Flow Score (1-10)</th>
+                                        <th>My Hack</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Coding Projects</td>
+                                        <td>9</td>
+                                        <td>Start with test cases first</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Writing Papers</td>
+                                        <td>7</td>
+                                        <td>Bullet-point outlines</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Exercise</td>
+                                        <td>8</td>
+                                        <td>Heart rate monitoring</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Reading</td>
+                                        <td>6</td>
+                                        <td>Annotation system</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-header bg-info text-white">
+                            <h5>The Neuroscience Behind Flow</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="p-3 border rounded mb-3 bg-light">
+                                        <h6>🧠 Prefrontal Cortex</h6>
+                                        <small>Partial shutdown reduces self-doubt</small>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="p-3 border rounded mb-3 bg-light">
+                                        <h6>💡 Dopamine</h6>
+                                        <small>Rewards focused attention</small>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="p-3 border rounded bg-light">
+                                        <h6>⚡ Norepinephrine</h6>
+                                        <small>Heightens alertness</small>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="p-3 border rounded bg-light">
+                                        <h6>🌈 Theta Waves</h6>
+                                        <small>Creative problem-solving</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="alert alert-success mt-3">
+                                Studies show flow states can improve learning retention by up to 430% (UCLA, 2018)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mt-4">
+                <div class="card-header bg-dark text-white">
+                    <h5>My Flow Journey: 3 Key Lessons</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="p-3 border rounded h-100">
+                                <h6>1. It's a Skill</h6>
+                                <p>My first year, I averaged 7 minutes of flow daily. Now I achieve 2+ hours through deliberate practice.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="p-3 border rounded h-100">
+                                <h6>2. Requires Sacrifice</h6>
+                                <p>I had to eliminate multitasking and social media to create space for deep work.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="p-3 border rounded h-100">
+                                <h6>3. Quality Over Quantity</h6>
+                                <p>90 minutes of flow accomplishes more than 8 hours of distracted work.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="youtube-container my-4">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/fXIeFJCqsPs" title="Flow State Explained" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="alert alert-warning">
+                <strong>Course Connection:</strong> Flow states directly enhance UNIC 117's focus on effective learning strategies and personal productivity.
+            </div>
+        </div>
+            <!-- main body divs dont make edit after this -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+        <div class="container">
+            <p class="mb-0">UNIC 117 Project - Roshan Sutihar - [Spring 2025]</p>
+        </div>
+    </footer>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            const navLinks = document.querySelectorAll('#topicNav .nav-link');
+            
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Remove active class from all links and content
+                    navLinks.forEach(navLink => navLink.classList.remove('active'));
+                    document.querySelectorAll('.topic-content').forEach(content => {
+                        content.classList.remove('active');
+                    });
+                    
+                    // Add active class to clicked link
+                    this.classList.add('active');
+                    
+                    // Show corresponding content
+                    const targetId = this.getAttribute('data-target');
+                    document.getElementById(targetId).classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
